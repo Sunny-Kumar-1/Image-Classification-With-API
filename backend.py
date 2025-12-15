@@ -8,8 +8,8 @@ CORS(app)  # Enables CORS for frontend-backend communication
 # Nyckel API details
 TOKEN_URL = 'https://www.nyckel.com/connect/token'
 INVOKE_URL = 'https://www.nyckel.com/v1/functions/recycling-identifier/invoke'
-CLIENT_ID = 'k8anxpoprn54388mius3h2c71665nfxg'
-CLIENT_SECRET = 'yodwlr121x2cqfad1v6m9lfiw3mqij1cpp5fuc1qsp2kzzglvt4s9b7d8vzi5ajh'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
 
 def get_access_token():
@@ -69,3 +69,4 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
