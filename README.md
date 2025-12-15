@@ -18,6 +18,7 @@ The model appears to be trained on the CIFAR-10 dataset, capable of recognizing 
 * [TensorFlow / Keras](https://www.tensorflow.org/) - For loading and running the deep learning model.
 * [Pillow (PIL)](https://python-pillow.org/) - For image processing.
 * [NumPy](https://numpy.org/) - For numerical operations on image data.
+* [Nyckel](https://www.nyckel.com/) - for api
 
 ## 📂 Project Structure
 
