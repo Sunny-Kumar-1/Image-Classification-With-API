@@ -1,40 +1,72 @@
-# Analysis of Algorithms (AA)
+# Image Classification Web Application
 
-[![License](https://img.shields.io/github/license/Sunny-Kumar-1/AA)](LICENSE)
+This project is a web-based image classification application built using Python, Streamlit, and TensorFlow. It allows users to upload an image via a simple web interface and uses a pre-trained deep learning model to predict the category of the image.
 
-Welcome to the **Analysis of Algorithms (AA)** repository. This collection is designed to house resources, notes, and implementations related to the design and analysis of computer algorithms.
+The model appears to be trained on the CIFAR-10 dataset, capable of recognizing classes such as airplanes, automobiles, birds, cats, deer, dogs, frogs, horses, ships, and trucks.
 
-The content is structured sequentially, covering fundamental paradigms and advanced topics in algorithmic studies.
+## ✨ Features
 
-## 📂 Repository Structure
+* **User-Friendly Interface:** Built with Streamlit for easy image uploading and interaction.
+* **Deep Learning Backend:** Utilizes a pre-trained TensorFlow/Keras model (`Image_classify.keras`) for accurate predictions.
+* **Instant Classification:** Provides immediate feedback on uploaded images.
+* **Research Notebook Included:** Includes the Jupyter notebook (`research.ipynb`) used for training the model.
 
-The repository is organized into numbered directories corresponding to major algorithmic topics:
+## 🛠️ Technologies Used
 
-* **[1. Introduction to Algorithm/](./1.%20Introduction%20to%20Algorithm/)**
-    * Foundational concepts, asymptotic notation (Big O, Omega, Theta), and basic algorithm analysis techniques.
-* **[2. Divide and Conquer/](./2.%20Divide%20and%20Conquer/)**
-    * Algorithms that solve problems by breaking them down into smaller subproblems (e.g., Merge Sort, Quick Sort, Binary Search).
-* **[3. Greedy Method/](./3.%20Greedy%20Method/)**
-    * Approaches that make locally optimal choices at each step with the hope of finding a global optimum (e.g., Prim's, Kruskal's, Dijkstra's, Fractional Knapsack).
-* **[4. Dynamic Programming/](./4.%20Dynamic%20Programming/)**
-    * Techniques for solving complex problems by breaking them down into simpler subproblems and storing the results to avoid redundant computations (e.g., Fibonacci, Knapsack 0/1, Longest Common Subsequence).
-* **[5. Graph Traversal Algrothim/](./5.%20Graph%20Traversal%20Algrothim/)**
-    * Fundamental algorithms for exploring graph structures, such as Breadth-First Search (BFS) and Depth-First Search (DFS).
-* **[6. Backtracking/](./6.%20Backtracking/)**
-    * Algorithmic techniques for solving constraint satisfaction problems by trying to build a solution incrementally and abandoning solutions that fail to satisfy constraints (e.g., N-Queens problem).
-* **[7. Branch and Bound/](./7.%20Branch%20and%20Bound/)**
-    * Optimization techniques used for solving combinatorial optimization problems.
-* **[8. NP Hard and NP Complete/](./8.%20NP%20Hard%20and%20NP%20Complete/)**
-    * Theory of computation regarding problem complexity classes, reducibility, and understanding the limits of efficient algorithms.
+* [Python](https://www.python.org/)
+* [Streamlit](https://streamlit.io/) - For building the web application interface.
+* [TensorFlow / Keras](https://www.tensorflow.org/) - For loading and running the deep learning model.
+* [Pillow (PIL)](https://python-pillow.org/) - For image processing.
+* [NumPy](https://numpy.org/) - For numerical operations on image data.
 
-## 🚀 How to Use This Repository
+## 📂 Project Structure
 
-Navigate through the numbered folders to access materials relevant to that specific topic. Each directory may contain notes, code implementations (in various languages), or problem sets related to the section header.
+```bash
+├── Image_classify.keras  # The pre-trained Keras classification model
+├── app.py                # The main Streamlit application script
+├── requirements.txt      # List of Python dependencies listed required to run the app
+└── research.ipynb        # Jupyter notebook used for model training and development
 
-## 📝 License
+🚀 Getting Started & Installation
+Follow these steps to set up and run the project locally on your machine.
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+Prerequisites
+Python 3.7 or higher installed.
 
-## 👤 Author
+Installation Steps
+Clone the repository:
 
-* **Sunny Kumar** - [Sunny-Kumar-1](https://github.com/Sunny-Kumar-1)
+Bash
+
+git clone [https://github.com/Sunny-Kumar-1/Image-Classification-With-API.git](https://github.com/Sunny-Kumar-1/Image-Classification-With-API.git)
+cd Image-Classification-With-API
+Create a virtual environment (Recommended):
+
+Bash
+
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+Install dependencies: Install the required Python packages using requirements.txt:
+
+Bash
+
+pip install -r requirements.txt
+💡 Usage
+Once dependencies are installed, run the Streamlit application:
+
+Bash
+
+streamlit run app.py
+Streamlit will start a local web server and typically open your default web browser automatically to http://localhost:8501.
+
+Use the "Browse files" button on the web page to upload an image (JPG, PNG, or JPEG).
+
+The application will display the uploaded image and the model's predicted classification.
+
+👤 Author
+Sunny Kumar - GitHub Profile
